@@ -10,7 +10,7 @@ from plotly.subplots import make_subplots
 # PAGE CONFIG
 # -----------------------
 st.set_page_config(
-    page_title="AI-Assisted Financial Dashboard | HCL Technologies",
+    page_title="Assisted Financial Dashboard | HCL Technologies",
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
@@ -903,10 +903,15 @@ elif page == "🚀 Project Valuation":
     project_display = project[['Revenue', 'EBITDA', 'EBIT', 'NOPAT', 'Capex', 'FCFF']].copy()
     project_display = project_display.round(2)
     
-    st.dataframe(
-        project_display.style.background_gradient(cmap='Blues', axis=0),
-        use_container_width=True
-    )
+    # Display with gradient styling if matplotlib is available, otherwise plain
+    try:
+        st.dataframe(
+            project_display.style.background_gradient(cmap='Blues', axis=0),
+            use_container_width=True
+        )
+    except ImportError:
+        # Fallback without styling if matplotlib not available
+        st.dataframe(project_display, use_container_width=True)
     
     st.markdown("---")
     

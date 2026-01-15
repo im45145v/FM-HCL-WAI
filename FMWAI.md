@@ -360,5 +360,6 @@ By combining financial theory, empirical data, and AI-enabled analytics within a
 - **Annexure A:** Prompt Logbook and AI Justification
 - **Annexure B:** Python Code Files and Computational Outputs
 - **Annexure C:** Financial Model Tables and Cash Flow Outputs
-- **Annexure D:** Streamlit Dashboard for Insights
-- **Annexure E:** Visualisations and **Screenshots**
+- **Annexure D:** [Streamlit Dashboard for Insights](https://hcl-tech.streamlit.app/): https://hcl-tech.streamlit.app/
+- **Annexure E:** Visualisations and Screenshots
+- **Annexure F:** Presentation Deck
