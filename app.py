@@ -10,11 +10,11 @@ from plotly.subplots import make_subplots
 # PAGE CONFIG
 # -----------------------
 st.set_page_config(
-    page_title="Assisted Financial Dashboard | HCL Technologies",
+    page_title="Financial Dashboard | HCL Technologies",
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
-        'About': "Assisted Corporate Finance Analysis Dashboard for HCL Technologies Limited"
+        'About': "Corporate Finance Analysis Dashboard for HCL Technologies Limited"
     }
 )
 
@@ -56,7 +56,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<h1 class="main-header">Assisted Financial Dashboard</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-header">Financial Dashboard</h1>', unsafe_allow_html=True)
 st.markdown('<p class="sub-header">HCL Technologies Limited • Comprehensive Firm-Level & Project-Level Financial Analysis</p>', unsafe_allow_html=True)
 
 # -----------------------
@@ -116,7 +116,7 @@ kd_pre_tax = st.sidebar.slider("Cost of Debt (pre-tax, %)", 4.0, 12.0, 7.5, step
 tax_rate = 0.25
 
 st.sidebar.markdown("---")
-st.sidebar.caption("**Assisted Analysis** | All insights validated using financial theory")
+st.sidebar.caption("**Analysis** | All insights validated using financial theory")
 
 # Map returns
 ret_map = {"Daily": rd, "Weekly": rw, "Monthly": rm}
@@ -1130,7 +1130,7 @@ elif page == "🚀 Project Valuation":
 # Footer
 st.markdown("---")
 st.caption("""
-**Disclaimer:** This dashboard employs assisted analysis as a decision-support tool. All insights are grounded 
+**Disclaimer:** This dashboard employs analysis as a decision-support tool. All insights are grounded 
 in financial theory and validated assumptions. Users should exercise professional judgment and consider qualitative 
 factors beyond quantitative analysis. | **Academic Project** • HCL Technologies Limited • FY 2024-25
 """)
