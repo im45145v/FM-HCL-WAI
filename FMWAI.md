@@ -102,12 +102,12 @@ AI is utilised to structure complex financial analysis workflows, automate data 
 **3.2 Tools and Techniques Used**
 
 | Tool / Technique            | Application                                              |
-|----------------------------|----------------------------------------------------------|
-| Large Language Models       | Structuring analysis and drafting interpretations         |
-| Python (AI-assisted coding)| Data extraction, return computation, regression analysis |
-| Statistical Libraries      | CAPM regression and beta estimation                      |
-| Visualisation Tools        | Price trends and return distributions                    |
-| Scenario Modelling         | Capital structure and project cash flow analysis         |
+| --------------------------- | -------------------------------------------------------- |
+| Large Language Models       | Structuring analysis and drafting interpretations        |
+| Python (AI-assisted coding) | Data extraction, return computation, regression analysis |
+| Statistical Libraries       | CAPM regression and beta estimation                      |
+| Visualisation Tools         | Price trends and return distributions                    |
+| Scenario Modelling          | Capital structure and project cash flow analysis         |
 
 **3.3 Data Sources**
 
@@ -204,6 +204,7 @@ Assuming a target capital structure of 25% debt and 75% equity, asset betas were
 | Metric                | Daily | Weekly | Monthly |
 |-----------------------|-------|--------|---------|
 | Relevered Equity Beta | 1.05  | 0.99   | 0.85    |
+> The pre-tax cost of debt is assumed to remain constant at 7.5% across both the base case and the target capital structure for reasons of analytical consistency and conservatism. The increase in leverage to 25% represents a moderate shift rather than a distress-inducing level of debt, and for a large, stable, investment-grade firm such a change does not necessarily result in an immediate repricing of debt. Moreover, the assumed rate already incorporates a reasonable credit spread over the risk-free rate, thereby avoiding optimistic bias in WACC estimation. Incremental financial risk arising from higher leverage is instead captured through changes in equity beta and the cost of equity, which is consistent with standard capital structure theory. This approach allows the analysis to isolate the impact of financing mix on firm value without conflating it with simultaneous changes in multiple risk assumptions.
 
 **Revised WACC**
 
@@ -363,3 +364,4 @@ By combining financial theory, empirical data, and AI-enabled analytics within a
 - **Annexure D:** [Streamlit Dashboard for Insights](https://hcl-tech.streamlit.app/): https://hcl-tech.streamlit.app/
 - **Annexure E:** Visualisations and Screenshots
 - **Annexure F:** Presentation Deck
+- **[GitHub Repository:](https://github.com/im45145v/FM-HCL-WAI)** https://github.com/im45145v/FM-HCL-WAI
